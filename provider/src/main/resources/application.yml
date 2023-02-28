@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  tomcat:
+    max-threads: 200
+
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    protocol: zookeeper
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20880
+    threads: 100
+
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/db_test
+    username: root
+    password: 12345678
+    driver-class-name: com.mysql.cj.jdbc.Driver

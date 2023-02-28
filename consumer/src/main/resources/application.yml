@@ -1,0 +1,14 @@
+server:
+  port: 8081
+  tomcat:
+    max-threads: 200
+
+dubbo:
+  application:
+    name: dubbo-consumer
+  registry:
+    protocol: zookeeper
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20880
