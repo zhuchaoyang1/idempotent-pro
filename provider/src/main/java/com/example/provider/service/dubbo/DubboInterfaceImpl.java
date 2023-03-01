@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2023/2/21
  * @description 实现类
  */
-//@SuppressWarnings("all")
+@SuppressWarnings("all")
 @Slf4j
 @Service
 @IdempotentService
